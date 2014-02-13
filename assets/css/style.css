@@ -1,0 +1,22 @@
+.header-form{
+  max-width: none !important;
+  width: 970px;
+  margin-left: 0px;
+}
+
+.page-header {
+  margin-top: 0px;
+}
+
+label {
+  padding-top: 3px;
+}
+
+.large-table {
+  margin-top: 20px;
+}
+
+th {
+  background-color:#666;
+  color: #eee;
+}

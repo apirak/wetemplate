@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Note there is no responsive meta tag here -->
+
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>Non-responsive Template for Bootstrap</title>
+
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/non-responsive.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">TMN BackOffice</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Dashboard</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Activity Log<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Search by Transaction</a></li>
+                <li><a href="#">Search by Items</a></li>
+                <li><a href="#">Summary</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Report two<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">apirak_pan</a></li>
+            <li><a href="#">setting</a></li>
+            <li><a href="#">logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container-fluid header-form">
+      <h3 class="page-header">Search by Transaction</h3>
+      <form class="form" role="form">
+
+        <div class="row form-group">
+          <label for="date-from" class="col-sm-2 control-label">req transid*</label>
+          <div class="col-md-2">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+          </div>
+          <label for="date-from" class="col-sm-2 control-label">payment id</label>
+          <div class="col-md-2">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+          </div>
+          <label for="date-from" class="col-sm-2 control-label">app id</label>
+          <div class="col-md-2">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <label for="date-from" class="col-sm-2 control-label">Date From</label>
+          <div class='col-md-2'>
+              <div class="form-group">
+                  <div class="input-group date input-group-sm" id='datetimepicker1'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                  </div>
+              </div>
+          </div>
+          <label for="date-from" class="col-sm-2 control-label">Date To</label>
+          <div class='col-md-2'>
+              <div class="form-group">
+                  <div class='input-group date input-group-sm' id='datetimepicker2'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                  </div>
+              </div>
+          </div>
+
+        </div>
+
+        <button type="submit" class="btn btn-default">Sign in</button>
+      </form>
+    </div> <!-- /container -->
+
+    <div class="container-fluid large-table">
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>Last Name</th>
+            <th>Username</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Username</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">1</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@TwBootstrap</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery-1.10.2.min.js"></script>
+    <script src="../assets/js/moment-with-langs.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $('#datetimepicker1').datetimepicker();
+        $('#datetimepicker2').datetimepicker();
+        //http://eonasdan.github.io/bootstrap-datetimepicker/
+      });
+    </script>
+
+
+  </body>
+</html>
