@@ -24,11 +24,12 @@
   </head>
 
   <body>
-
+    <img id="flickr-background" src="../assets/images/backgrounds/first.jpg" class="bg">
     <div class="container">
 
       <form class="form-signin" role="form">
         <h2 class="form-signin-heading">Login</h2>
+        <h5 class="form-signin-heading">Payment Back Office</h5>
         <input type="email" class="form-control" placeholder="Email address" required autofocus>
         <input type="password" class="form-control" placeholder="Password" required>
         <label class="checkbox">
@@ -39,9 +40,29 @@
 
     </div> <!-- /container -->
 
+    <div class="background-note">your interesting background came from <a href="http://www.flickr.com/explore/interesting/2014/02/">flickr</div>
+
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+      $.ajax({
+        url: 'http://api.flickr.com/services/rest/',
+          data: {
+            format: 'json',
+            method: 'flickr.interestingness.getList',
+            api_key: '5c55da4f041ee07458674de4909c5985',
+          },
+          dataType: 'jsonp',
+            jsonp: 'jsoncallback'
+          }).done(function (data) {
+            var picture = data.photos.photo[0];
+            url = 'http://farm' + picture.farm + '.static.flickr.com/' +
+                picture.server + '/' + picture.id + '_' + picture.secret;
+            $("#flickr-background").attr("src", url + '_b.jpg');
+          });
+    </script>
   </body>
 </html>

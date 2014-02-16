@@ -4,10 +4,16 @@ body {
   background-color: #eee;
 }
 
+h2.form-signin-heading {
+  margin-top: 0px;
+}
+
 .form-signin {
   max-width: 330px;
   padding: 15px;
   margin: 0 auto;
+  background-color: #eee;
+  border-radius: 6px;
 }
 .form-signin .form-signin-heading,
 .form-signin .checkbox {
@@ -39,3 +45,32 @@ body {
   border-top-right-radius: 0;
 }
 
+/* Big Background image */
+
+img.bg {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+}
+
+@media screen and (max-width: 1024px) {
+  img.bg {
+    left: 50%;
+    margin-left: -512px;
+  }
+}
+
+.background-note {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 3px 6px;
+  border-radius: 3px;
+  background-color:rgba(0,0,0,0.5);
+  color: #999;
+}
