@@ -11,14 +11,13 @@
 
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Non-responsive Template for Bootstrap</title>
+    <title>Detail Page</title>
 
     <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-    <link href="../assets/css/style.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="../assets/css/non-responsive.css" rel="stylesheet">
+
+    <link href="../assets/css/style.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -70,27 +69,57 @@
       </div>
     </div>
 
+
     <div class="container-fluid header-form">
-      <h3 class="page-header">Search by Transaction</h3>
-      <form class="form" role="form">
+      <h3 class="page-header sm-header">Search by Transaction</h3>
+
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+      </div>
+
+      <form class="form sm-form" role="form">
 
         <div class="row form-group">
-          <label for="date-from" class="col-sm-2 control-label">req transid*</label>
+          <label for="date-from" class="sm-label control-label">TMN Wallet ID </label>
           <div class="col-md-2 input-group-sm">
             <input type="text" class="form-control" placeholder=".col-xs-2">
           </div>
-          <label for="date-from" class="col-sm-2 control-label">payment id</label>
+          <label for="date-from" class="sm-label control-label">Merchant Name</label>
           <div class="col-md-2 input-group-sm">
             <input type="text" class="form-control" placeholder=".col-xs-2">
           </div>
-          <label for="date-from" class="col-sm-2 control-label">app id</label>
+          <label for="date-from" class="sm-label control-label">Amount</label>
+          <div class="col-md-2 input-group-sm">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+          </div>
+        </div>
+        <div class="row form-group">
+          <label for="date-from" class="sm-label control-label">Transaction Type</label>
+          <div class="col-md-2 input-group-sm">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+          </div>
+          <label for="date-from" class="sm-label control-label">Mobile</label>
+          <div class="col-md-2 input-group-sm">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+          </div>
+          <label for="date-from" class="sm-label control-label">Status</label>
+          <div class="col-md-2 input-group-sm">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+          </div>
+        </div>
+        <div class="row form-group">
+          <label for="date-from" class="sm-label control-label">PAN</label>
+          <div class="col-md-2 input-group-sm">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+          </div>
+          <label for="date-from" class="sm-label control-label">Channel</label>
           <div class="col-md-2 input-group-sm">
             <input type="text" class="form-control" placeholder=".col-xs-2">
           </div>
         </div>
 
         <div class="row form-group">
-          <label for="date-from" class="col-sm-2 control-label">Date From</label>
+          <label for="date-from" class="sm-label control-label">Date From</label>
           <div class='col-md-2'>
               <div class="form-group">
                   <div class="input-group date input-group-sm" id='datetimepicker1'>
@@ -100,7 +129,7 @@
                   </div>
               </div>
           </div>
-          <label for="date-from" class="col-sm-2 control-label">Date To</label>
+          <label for="date-from" class="sm-label control-label">Date To</label>
           <div class='col-md-2'>
               <div class="form-group">
                   <div class='input-group date input-group-sm' id='datetimepicker2'>
@@ -113,18 +142,15 @@
 
         </div>
 
-        <button type="submit" class="btn btn-default">Sign in</button>
+        <button type="submit" class="btn btn-default">Search</button>
+        export
+        <a href="#">csv</a>
       </form>
     </div> <!-- /container -->
 
-    <div class="container-fluid large-table">
-      <div class="alert alert-danger">
-        <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
-      </div>
-    </div>
 
     <div class="container-fluid">
-      <table class="table table-bordered">
+      <table class="table">
         <thead>
           <tr>
             <th>#</th>

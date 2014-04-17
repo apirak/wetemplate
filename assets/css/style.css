@@ -1,22 +1,33 @@
-.header-form{
+.header-form {
   max-width: none !important;
   width: 970px;
-  margin-left: 0;
-}
+  margin-left: 0; }
 
 .page-header {
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 label {
-  padding-top: 3px;
-}
+  padding-top: 3px; }
 
 .large-table {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 th {
-  background-color:#666;
-  color: #eee;
-}
+  background-color: #666666;
+  color: #eeeeee; }
+
+.sm-form {
+  margin-bottom: 20px; }
+  .sm-form .sm-label {
+    width: 135px;
+    float: left;
+    padding-left: 15px; }
+
+.bootstrap-datetimepicker-widget td, .bootstrap-datetimepicker-widget th {
+  border-radius: 0; }
+
+.bootstrap-datetimepicker-widget thead tr:first-child th:hover {
+  color: #555555; }
+
+.sm-header {
+  margin-bottom: 20px; }
