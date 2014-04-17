@@ -73,13 +73,13 @@
     <div class="container-fluid header-form">
       <h3 class="page-header sm-header">Search by Transaction</h3>
 
-      <div class="alert alert-danger">
+      <div class="alert alert-danger sm-alert">
         <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
       </div>
 
       <form class="form sm-form" role="form">
 
-        <div class="row form-group">
+        <div class="row form-group sm-form-group">
           <label for="date-from" class="sm-label control-label">TMN Wallet ID </label>
           <div class="col-md-2 input-group-sm">
             <input type="text" class="form-control" placeholder=".col-xs-2">
@@ -93,7 +93,7 @@
             <input type="text" class="form-control" placeholder=".col-xs-2">
           </div>
         </div>
-        <div class="row form-group">
+        <div class="row form-group sm-form-group">
           <label for="date-from" class="sm-label control-label">Transaction Type</label>
           <div class="col-md-2 input-group-sm">
             <input type="text" class="form-control" placeholder=".col-xs-2">
@@ -107,7 +107,7 @@
             <input type="text" class="form-control" placeholder=".col-xs-2">
           </div>
         </div>
-        <div class="row form-group">
+        <div class="row form-group sm-form-group">
           <label for="date-from" class="sm-label control-label">PAN</label>
           <div class="col-md-2 input-group-sm">
             <input type="text" class="form-control" placeholder=".col-xs-2">
@@ -118,7 +118,7 @@
           </div>
         </div>
 
-        <div class="row form-group">
+        <div class="row form-group sm-form-group">
           <label for="date-from" class="sm-label control-label">Date From</label>
           <div class='col-md-2'>
               <div class="form-group">
@@ -139,12 +139,16 @@
                   </div>
               </div>
           </div>
-
         </div>
 
-        <button type="submit" class="btn btn-default">Search</button>
-        export
-        <a href="#">csv</a>
+        <button type="submit" class="btn btn-primary btn-sm">Filter</button>
+        <span>
+          export
+          <a href="#">csv</a>,
+          <a href="#">excel</a>,
+          <a href="#">facebook</a>,
+          <a href="#">html</a>
+        </span>
       </form>
     </div> <!-- /container -->
 
@@ -230,6 +234,19 @@
           </tr>
         </tbody>
       </table>
+
+      <ul class="pagination pagination-sm sm-pagination">
+        <li class="disabled"><a href="#">«</a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">»</a></li>
+     </ul>
+     <div class="total">
+       total: 3405 row
+     </div>
     </div>
 
 

@@ -4,10 +4,16 @@
   margin-left: 0; }
 
 .page-header {
-  margin-top: 0; }
+  margin-top: 0;
+  border-bottom: 0px solid #eeeeee;
+  color: #999999; }
 
 label {
   padding-top: 3px; }
+
+.table {
+  font-size: 12px;
+  margin-bottom: 5px; }
 
 .large-table {
   margin-top: 20px; }
@@ -22,6 +28,8 @@ th {
     width: 135px;
     float: left;
     padding-left: 15px; }
+  .sm-form .sm-form-group {
+    margin-bottom: 5px; }
 
 .bootstrap-datetimepicker-widget td, .bootstrap-datetimepicker-widget th {
   border-radius: 0; }
@@ -30,4 +38,16 @@ th {
   color: #555555; }
 
 .sm-header {
-  margin-bottom: 20px; }
+  margin-bottom: 10px;
+  font-size: 20px; }
+
+.sm-pagination {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.total {
+  color: #999999;
+  font-size: 10px; }
+
+.sm-alert {
+  margin-bottom: 10px; }
